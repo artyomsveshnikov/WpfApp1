@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": "1",
+    "name": "Odin",
+    "surname": "Noname",
+    "phonenumber": "456454565"
+  },
+  {
+    "id": "2",
+    "name": "Papa",
+    "surname": "Rimskiy",
+    "phonenumber": "789789789"
+  },
+  {
+    "id": "3",
+    "name": "Alex",
+    "surname": "Pushkin",
+    "phonenumber": "123123123"
+  }
+]
