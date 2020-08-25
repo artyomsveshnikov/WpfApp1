@@ -31,5 +31,12 @@ namespace WpfApp1.ViewModel
             get { return (ObservableCollection<Contact>)GetValue(ContactsListProperty); }
             set { SetValue(ContactsListProperty, value); }
         }
+
+        public static readonly DependencyProperty SelectedContactProperty = DependencyProperty.Register("SelectedContact", typeof(Contact), typeof(ContactsVM), null);
+        public Contact SelectedContact
+        {
+            get { return (Contact)GetValue(SelectedContactProperty); }
+            set { SetValue(SelectedContactProperty, value); }
+        }
     }
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="498.944">
     <Grid>
-        <Button x:Name="button" Content="Открыть контакты" HorizontalAlignment="Left" Margin="166,178,0,0" VerticalAlignment="Top" Width="115" Height="37"/>
+        <Button x:Name="button" Content="Открыть контакты" Command="{Binding OpenContactsListCommand}" HorizontalAlignment="Left" Margin="166,178,0,0" VerticalAlignment="Top" Width="115" Height="37"/>
 
     </Grid>
 </Window>

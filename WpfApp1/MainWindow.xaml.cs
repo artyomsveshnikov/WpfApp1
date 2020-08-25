@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.ViewModel;
 
 namespace WpfApp1
 {
@@ -23,6 +24,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowVM(); //Здесь идёт присваивание контекста данных для привязки этих самых данных
         }
     }
 }

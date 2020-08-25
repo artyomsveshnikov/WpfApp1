@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.View"
         mc:Ignorable="d"
-        Title="ContactsWindow" Height="975.66" Width="549.647">
+        Title="ContactsWindow" Height="436.928" Width="755.633" ResizeMode="CanMinimize">
     <Grid>
-        
+        <DataGrid x:Name="dataGridContacts" ItemsSource="{Binding ContactsList}" SelectedItem="{Binding SelectedContact}" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="387" Margin="10,10,0,0" VerticalAlignment="Top" Width="730">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№ п/п" Width="55" Binding="{Binding Id, Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Width="205" Binding="{Binding Name, Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия" Width="255" Binding="{Binding Surname, Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding PhoneNumber, Mode=TwoWay}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
     </Grid>
 </Window>

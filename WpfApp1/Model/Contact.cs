@@ -24,6 +24,4 @@ namespace WpfApp1.Model
         [JsonProperty("phonenumber")]
         public long PhoneNumber { get; set; }
     }
-
-
 }
